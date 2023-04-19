@@ -1,0 +1,25 @@
+.nav{
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navitem{
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+   
+}
+
+.navtext{
+    color: white;
+    list-style: none;
+}
+
+.navheadtext{
+    color: white;
+}

@@ -1,0 +1,13 @@
+.carouselIMG{
+    width: 70%;
+    height: 500px;
+    background-color: aqua;
+    display: flex;
+    overflow: hidden;
+}
+
+.carouseBTN{
+    width: 50%;
+    height: 50px;
+    background-color: beige;
+}
