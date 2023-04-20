@@ -5,7 +5,7 @@ export default function CarouselIMG(props){
    const product = props.data
 /*    const currentdata = props.current
    const currentcallback = props.funcurrent */
-   const [Slidetrasition,setSlidetrasition] = useState('fadein')
+  /*  const [Slidetrasition,setSlidetrasition] = useState('fadein') */
    const [currentindex,setCurrentIndex] = useState(0)
    
    console.log(currentindex)
