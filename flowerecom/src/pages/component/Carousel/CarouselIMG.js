@@ -3,8 +3,8 @@ import { useState } from "react"
 import styles from '@/styles/Carousel.module.css'
 export default function CarouselIMG(props){
    const product = props.data
-/*    const currentdata = props.current
-   const currentcallback = props.funcurrent */
+   const currentdata = props.current
+   const currentcallback = props.funcurrent
    const [Slidetrasition,setSlidetrasition] = useState('fadein')
    const [currentindex,setCurrentIndex] = useState(0)
    
@@ -19,16 +19,20 @@ export default function CarouselIMG(props){
     const newindex = currentindex + 1
     if(newindex > product.length - 1){
       setCurrentIndex(0)
+      currentcallback(0)
     }else{
       setCurrentIndex(newindex)
+      currentcallback(newindex)
     }
    }
   const  handleprev=()=>{
     const newindex = currentindex - 1
     if(newindex < 0){
       setCurrentIndex(product.length - 1)
+      currentcallback(product.length - 1)
     }else{
       setCurrentIndex(newindex)
+      currentcallback(newindex)
     }
    }
 
