@@ -46,9 +46,11 @@ export default function CarouselIMG(props){
         })}
         </div>
         </div>
-       
-        <button className={styles.buttonnext} onClick={()=>{handlenext()}} >next</button>
-        <button className={styles.buttonprev} onClick={()=>{handleprev()}} >prev</button>
+
+       <Image src='/nextarrowbtn.png' width={80} height={70} className={styles.buttonnext} onClick={()=>{handlenext()}}></Image>
+       <Image src='/prevearrow.png' width={80} height={70} className={styles.buttonprev} onClick={()=>{handleprev()}} ></Image>
+        
+ 
         </>
     )
 }
