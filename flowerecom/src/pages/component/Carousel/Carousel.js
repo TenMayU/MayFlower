@@ -6,6 +6,7 @@ import CarouselBTN from './CarouselBTN'
 
 export default function Carousel(){   
   const [currentImage,setCurrentImage] = useState([0])
+  console.log("imrender")
     return(
         <>
            <div>

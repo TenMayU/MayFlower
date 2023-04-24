@@ -6,31 +6,27 @@ export default function CarouselIMG(props){
    const currentdata = props.current
    const currentcallback = props.funcurrent
    const [Slidetrasition,setSlidetrasition] = useState('fadein')
-   const [currentindex,setCurrentIndex] = useState(0)
-   console.log(currentindex)
+   /* const [currentindex,setCurrentIndex] = useState(0) */
+   console.log(currentdata)
 
    const style ={
-    transform:`translateX(-${currentindex * 100}%)`,
+    transform:`translateX(-${currentdata * 100}%)`,
     transition: "transform 0.5 ease-in-out"
    }
    
   const handlenext=()=>{
-    const newindex = currentindex + 1
+    const newindex = currentdata + 1
     if(newindex > product.length - 1){
-      setCurrentIndex(0)
       currentcallback(0)
-    }else{
-      setCurrentIndex(newindex)
+    }else{   
       currentcallback(newindex)
     }
    }
   const  handleprev=()=>{
-    const newindex = currentindex - 1
-    if(newindex < 0){
-      setCurrentIndex(product.length - 1)
+    const newindex = currentdata - 1
+    if(newindex < 0){   
       currentcallback(product.length - 1)
-    }else{
-      setCurrentIndex(newindex)
+    }else{ 
       currentcallback(newindex)
     }
    }
