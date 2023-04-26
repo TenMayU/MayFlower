@@ -3,10 +3,16 @@
     width: 100%;
     height: 50px;
     display: flex;
-
     justify-content: center;
 }
 
+.Carousel{
+    min-width: 80%;
+    box-shadow: 0 0px 10px 0 rgba(31, 38,135,0.37);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .carouselIMG{
     width: 100%;
@@ -44,13 +50,12 @@
 
 .buttonprev,.buttonnext{
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 40%;
     padding:  8px 16px;
     border: none;
     font-size: 1rem;
     cursor: pointer;
-    opacity: 0.2;
+    opacity: 0.6;
 }
 
 .buttonprev:hover,.buttonnext:hover{
@@ -58,7 +63,7 @@
 }
 
 .buttonprev{
-    left: 200px;
+    left: 20%;
    
 }
 
