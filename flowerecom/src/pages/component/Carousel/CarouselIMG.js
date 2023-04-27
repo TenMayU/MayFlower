@@ -37,7 +37,7 @@ export default function CarouselIMG(props){
         <div className={styles.carouselIMG}>
         <div className={styles.carouselE}  style={style}>
         {product.map((e,index)=>{
-          return <Image src={e.image} width={1500} height={1500} priority alt={e.name} key={index} ></Image>
+          return <Image src={e.image} width={1500} height={1500} priority alt={e.name} key={index}  ></Image>
         })}
         </div>
         </div>
