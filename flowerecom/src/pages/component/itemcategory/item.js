@@ -1,4 +1,5 @@
 import Fillteritem from "./filteritem";
+import Listitem from "./listitem";
 
 export default function Item(){
     return(
@@ -7,7 +8,7 @@ export default function Item(){
             <Fillteritem/>
            </div>
            <div className="listitem">
-
+           <Listitem/>
            </div>
         </>
     )
