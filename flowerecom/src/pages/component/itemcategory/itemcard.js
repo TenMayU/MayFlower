@@ -9,10 +9,10 @@ export default function Itemcard({id}){
              <Image></Image>
         </div>
         <div className={styles.itemcard_name}>
-flower
+<h1>FLOWER</h1>
         </div>
-        <div className={styles.itemcard_price}>
-     179b
+        <div className={styles.itemcard_price}>       
+        <h1>179B</h1>
         </div>
       </div>
       </>
