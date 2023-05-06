@@ -1,6 +1,6 @@
 import Fillteritem from "./filteritem";
 import Listitem from "./listitem";
-import styles from '@/styles/item.module.css'
+import styles from '@/styles/Fillter.module.css'
 export default function Item(){
     return(
         <>

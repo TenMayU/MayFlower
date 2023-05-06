@@ -8,7 +8,7 @@ export default function CarouselBTN({data,current,selectdata}){
         <>
          <div  className={styles.carouseBTN}>
             {numdata.map((e, index)=>{
-                return <div className={styles.carousebtnE +" "+styles[index == currentdata ? "active" : ""]} onClick={()=>{
+                return <div key={index} className={styles.carousebtnE +" "+styles[index == currentdata ? "active" : ""]} onClick={()=>{
                     secdata(index)
                 }}></div>
             })}

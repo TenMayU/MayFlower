@@ -7,7 +7,7 @@ export default function CarouselIMG(props){
    const currentcallback = props.funcurrent
    const [Slidetrasition,setSlidetrasition] = useState('fadein')
    /* const [currentindex,setCurrentIndex] = useState(0) */
-   console.log(currentdata)
+
 
    const style ={
     transform:`translateX(-${currentdata * 100}%)`,

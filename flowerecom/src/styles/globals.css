@@ -13,3 +13,7 @@ section{
     display: flex;
     justify-content: center;
 }
+
+main{
+    width: 100%;
+}

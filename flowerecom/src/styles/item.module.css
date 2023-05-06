@@ -18,9 +18,12 @@
 .listitem{
     display: flex;
     width: 100%;
-    justify-content: center;
+    align-items: center;
     height: 100%;
- 
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+
 }
 
 .itemcard_image{
@@ -30,6 +33,8 @@
 }
 .itemcard_name p{
    font-size: 18px;
+   overflow: hidden;
+   text-overflow: ellipsis;
 }
 
 .itemcard_name{
@@ -40,8 +45,7 @@
     box-sizing: border-box;
     padding-left: 10px;
     padding-right: 10px;
-    background-color: aqua;
-
+    
 }
 
 .itemcard_price{
@@ -76,13 +80,47 @@
 
 
 .Gridlist{
-    display: inline-grid;
-    gap: 20px;
+    display: grid;
+    gap: 23px;
     grid-template-columns:repeat(1, minmax(150px,300px)) repeat(auto-fit, minmax(150px,300px));
-    grid-template-rows: repeat(auot-fill,1fr);
+    grid-auto-rows: max-content;
     grid-auto-flow: row;
-    width: 100%;
+    width: 93%;
     min-width: 400px ;
-    height: 100%;
-    justify-content: center;
+    min-height: 100vh;
+    height: fit-content;
+
 }
+
+.btnnum{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    list-style: none;
+    font-style: normal;
+    cursor: pointer;
+}
+
+.active{
+    background-color: rgb(222, 222, 222);
+}
+
+.ulflex{
+    width: 40%;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    height: 50px;
+}
+
+.btnlist{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
