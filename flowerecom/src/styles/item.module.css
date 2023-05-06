@@ -1,0 +1,126 @@
+
+
+.itemcard{
+    max-width: 300px;
+    width: 100%;
+    min-width: 150px;
+    height: 300px; 
+    display: flex;
+    flex-direction: column;
+    border: solid 1px rgb(214, 214, 214);  
+}
+
+.itemcard:hover{
+    box-shadow: 0px 0px 5px 1px rgb(111, 174, 237);
+    cursor: pointer;
+}
+
+.listitem{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+
+}
+
+.itemcard_image{
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+}
+.itemcard_name p{
+   font-size: 18px;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+
+.itemcard_name{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 20%;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+.itemcard_price{
+    display: flex;
+    width: 100%;
+    height: 10%;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.itemcard_tag{
+    display: flex;
+    width: 100%;
+    height: 10%;
+    justify-content: flex-end;
+}
+
+/* .itemcard_checkout{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height:20% ;
+    padding-left: 10px;
+} */
+
+/* .itemcard_price input{
+    width: 50px;
+    height: 50px;
+} */
+
+
+.Gridlist{
+    display: grid;
+    gap: 23px;
+    grid-template-columns:repeat(1, minmax(150px,300px)) repeat(auto-fit, minmax(150px,300px));
+    grid-auto-rows: max-content;
+    grid-auto-flow: row;
+    width: 93%;
+    min-width: 400px ;
+    min-height: 100vh;
+    height: fit-content;
+
+}
+
+.btnnum{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    list-style: none;
+    font-style: normal;
+    cursor: pointer;
+}
+
+.active{
+    background-color: rgb(222, 222, 222);
+}
+
+.ulflex{
+    width: 40%;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    height: 50px;
+}
+
+.btnlist{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+

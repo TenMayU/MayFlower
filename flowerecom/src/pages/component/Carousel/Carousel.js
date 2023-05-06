@@ -9,12 +9,15 @@ export default function Carousel(){
   console.log("imrender")
     return(
         <>
-           <div>
+        <div className={styles.Carousel}>
+        <div>
               <CarouselIMG data={Chadata} current={currentImage} funcurrent={setCurrentImage} />
             </div>
            <div>
               <CarouselBTN  data={Chadata} current={currentImage} selectdata={setCurrentImage}/>
            </div>
+        </div>
+         
          </>
     )
 }
