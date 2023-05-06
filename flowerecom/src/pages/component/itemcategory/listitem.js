@@ -10,7 +10,7 @@ export default function Listitem(){
   const firstindexdisplay = lastindexdisplay - pagelengnt
   const index = data.slice(firstindexdisplay, lastindexdisplay)
   const indexlimit = Math.ceil(data.length/pagelengnt)
-  console.log(indexlimit)
+
   const btnnum = [...Array(indexlimit+1).keys()].slice(1)
   const btnstartlimit = currentpage - 3
   const btnendlimit = btnstartlimit + 7
@@ -28,14 +28,14 @@ export default function Listitem(){
          })}
         </div>
         <ul className={styles.ulflex}>
-            <div className={styles.btnlist} onClick={()=>{setCurrentpage(currentpage-1 )} }><p>PREV</p></div>
+            <div className={styles.btnlist} onClick={()=>{prevbtn(currentpage-1)} }><p>PREV</p></div>
            {btnnum.map((e, index)=>{
         if (e > btnstart && e <= btnend){
            return <i className={`${styles.btnnum} ${e==currentpage?styles.active:""}`} onClick={()=>{next(e)}}>{e}</i>
         }
           
            })} 
-           <div className={styles.btnlist} onClick={()=>{setCurrentpage(currentpage+1 )}} ><p>NEXT</p></div>
+           <div className={styles.btnlist} onClick={()=>{nextbtn(currentpage+1)}} ><p>NEXT</p></div>
         </ul>   
      </div>
       
@@ -45,7 +45,22 @@ export default function Listitem(){
     function next(e){
         setCurrentpage(e)
     }
+   
+    function nextbtn(e){  
+       if(e > btnnum.length){
+        setCurrentpage(btnnum.length)
+        }else{
+        setCurrentpage(e)
+        console.log("check")
+    }
+  }
+    function prevbtn(e){
 
-
+       if(e < 1){
+        setCurrentpage(1)
+        }else{
+        setCurrentpage(e)
+    }
+  }
 }
 
