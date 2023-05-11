@@ -35,15 +35,20 @@ export default function CarouselIMG(props){
     return(
         <>
         <div className={styles.carouselIMG}>
-        <div className={styles.carouselE}  style={style}>
-        {product.map((e,index)=>{
-          return <Image src={e.image} width={1500} height={1500} priority alt={e.name} key={index}  ></Image>
-        })}
+        <div className={styles.carouselE} style={style}>
+        {product.map((e,index)=>(
+          <img src={e.image} alt={e.name} className={styles.caimage}></img>
+        )
+        )}
         </div>
         </div>
-
-       <Image src='/nextarrowbtn.png' width={80} height={70} className={styles.buttonnext} onClick={()=>{handlenext()}}></Image>
-       <Image src='/prevearrow.png' width={80} height={70} className={styles.buttonprev} onClick={()=>{handleprev()}} ></Image>
+    <div className={styles.buttonnext} >
+       <Image src='/nextarrowbtn.png' fill={true} sizes="(max-width:768px) 50vw, 30vw" onClick={()=>{handlenext()}} alt="nextclick" ></Image>
+    </div>
+    <div className={styles.buttonprev}>
+       <Image src='/prevearrow.png'  fill={true} sizes="(max-width:768px) 50vw, 30vw" onClick={()=>{handleprev()}} alt="prevclick" ></Image>
+      </div> 
+      
         
  
         </>

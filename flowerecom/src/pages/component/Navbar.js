@@ -12,7 +12,7 @@ export default function Navbar(){
                   <li className={styles.navtext}>test</li>             
             </div>
                <div className={styles.navprofile}>
-                  <Image src="/icon.png" width={40} height={40} className={styles.imageprofile}></Image>
+                  <Image src="/icon.png" width={40} height={40} className={styles.imageprofile} alt='icon'></Image>
               </div>
             </div>      
         </nav>

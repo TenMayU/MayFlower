@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Carousel from './component/Carousel/Carousel'
 import Item from './component/itemcategory/item'
+import Catest from './component/Carousel/testcarousel'
 /* import {Chadata} from './Data/data' */
 const inter = Inter({ subsets: ['latin'] })
 

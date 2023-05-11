@@ -6,7 +6,7 @@ export default function Itemcard({id}){
       <>
       <div className={styles.itemcard}>
         <div className={styles.itemcard_image}>
-             <Image src={id.image} width={300} height={300} ></Image>
+             <Image src={id.image} width={300} height={300} alt="ควย" ></Image>
         </div>
         <div className={styles.itemcard_name}>     
           <p>{id.name}</p>

@@ -23,7 +23,7 @@ export default function Listitem(){
           <div className={styles.Gridlist}>
          {index.map((e)=>{
             return(
-                <Itemcard id={e}></Itemcard>
+                <Itemcard id={e} key={e.name} ></Itemcard>
             )
          })}
         </div>
@@ -31,7 +31,7 @@ export default function Listitem(){
             <div className={styles.btnlist} onClick={()=>{prevbtn(currentpage-1)} }><p>PREV</p></div>
            {btnnum.map((e, index)=>{
         if (e > btnstart && e <= btnend){
-           return <i className={`${styles.btnnum} ${e==currentpage?styles.active:""}`} onClick={()=>{next(e)}}>{e}</i>
+           return <i className={`${styles.btnnum} ${e==currentpage?styles.active:""}`} onClick={()=>{next(e)}} key={index} >{e}</i>
         }
           
            })} 
